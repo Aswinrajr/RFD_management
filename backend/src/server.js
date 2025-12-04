@@ -15,10 +15,7 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors({
-  origin:'https://rfd-management.vercel.app',
-  credentials: true
-}));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
