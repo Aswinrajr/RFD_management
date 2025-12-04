@@ -1,0 +1,210 @@
+.create-rfp {
+  color: white;
+}
+
+.page-header {
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  font-size: 36px;
+  margin: 0 0 12px 0;
+}
+
+.page-header p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Form Container */
+.rfp-form-container {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 30px;
+  align-items: start;
+}
+
+.rfp-form {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.label-hint {
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+.form-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.form-group textarea:disabled {
+  background: #f3f4f6;
+  cursor: not-allowed;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+/* Tips Section */
+.tips-section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 90px;
+}
+
+.tips-section h3 {
+  color: #333;
+  margin: 0 0 16px 0;
+  font-size: 18px;
+}
+
+.tips-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tips-section li {
+  color: #666;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #f9fafb;
+  border-radius: 6px;
+  border-left: 3px solid #667eea;
+}
+
+/* RFP Preview */
+.rfp-preview {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.success-message {
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 30px;
+}
+
+.success-message h2 {
+  color: #10b981;
+  margin: 0 0 12px 0;
+  font-size: 28px;
+}
+
+.success-message p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.parsed-rfp {
+  color: #333;
+}
+
+.parsed-rfp h3 {
+  margin: 0 0 24px 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.rfp-field {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.rfp-field:last-child {
+  border-bottom: none;
+}
+
+.rfp-field strong {
+  display: block;
+  color: #667eea;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.rfp-field p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.rfp-field ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.rfp-field li {
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #333;
+}
+
+@media (max-width: 1024px) {
+  .rfp-form-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .tips-section {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 28px;
+  }
+  
+  .rfp-form {
+    padding: 20px;
+  }
+}
