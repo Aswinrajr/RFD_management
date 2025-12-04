@@ -16,7 +16,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'https://rfd-management.vercel.app',
+  origin:'https://rfd-management.vercel.app',
   credentials: true
 }));
 app.use(express.json());
